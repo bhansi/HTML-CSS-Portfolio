@@ -1,0 +1,11 @@
+header * {
+    display: inline-block;
+}
+
+#profile-picture {
+    width: 10%;
+}
+
+nav {
+    float: right;
+}
