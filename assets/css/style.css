@@ -1,11 +1,57 @@
-header * {
+:root {
+    --header-background: #444444;
+    --header-text: #9ce9f4;
+    --header-link-hover: #fafafa;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* --------------Header-------------- */
+
+header {
+    background-color: var(--header-background);
+    color: var(--header-text);
+    padding: 15px 5px;
+}
+
+header > * {
     display: inline-block;
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 250%;
+    color: var(--header-background);
+    background-color: var(--header-text);
+    padding: 1% 2%;
+    border-radius: 20px 0 0 20px;
+    text-align: center;
 }
 
 #profile-picture {
     width: 10%;
+    border-radius: 200px;
 }
 
 nav {
     float: right;
+    font-size: 150%;
+    padding: 5%;
+}
+
+nav a {
+    text-decoration: none;
+    border-bottom: solid;
+    padding: 6px;
+    margin-right: 4px;
+}
+
+nav a:visited {
+    color: var(--header-text);
+}
+
+nav a:hover {
+    color: var(--header-link-hover);
 }
