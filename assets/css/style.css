@@ -1,7 +1,9 @@
 :root {
-    --header-background: #444444;
-    --header-text: #9ce9f4;
+    --header-background: #31343d;
+    --header-text: #92cccd;
     --header-link-hover: #fafafa;
+    --section-heading: #445876;
+    --grid-color: #91cccd;
 }
 
 body {
@@ -32,7 +34,9 @@ h1 {
 
 #profile-picture {
     width: 10%;
-    border-radius: 200px;
+    border-radius: 20px;
+    border: solid;
+    transform: translateX(-8px);
 }
 
 nav {
@@ -54,4 +58,109 @@ nav a:visited {
 
 nav a:hover {
     color: var(--header-link-hover);
+}
+
+/* ---------------Main--------------- */
+
+main > section {
+    margin: 40px;
+}
+
+main > section > * {
+    display: inline-block;
+}
+
+main > section > h2 {
+    font-size: 250%;
+    color: var(--section-heading);
+    width: 15%;
+    height: 100%;
+    text-align: right;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+main > section > section, .grid-container {
+    width: 75%;
+    border-left: solid var(--section-heading);
+    padding-left: 40px;
+}
+
+main > section > section p {
+    padding-bottom: 15px;
+    line-height: 1.5;
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40vh 20vh 20vh;
+    gap: 15px;
+}
+
+.grid-container figure {
+    height: 100%;
+    border: 5px solid var(--grid-color);
+}
+
+.grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-container figcaption {
+    width: fit-content;
+    padding: 5px 20px;
+    background-color: var(--grid-color);
+    position: relative;
+    transform: translateY(-90px);
+}
+
+.grid-container figcaption * {
+    line-height: 1.75;
+}
+
+.grid-container h3 {
+    font-size: 150%;
+}
+
+/* Row 1, Col 1 & 2 */
+#surf-report {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/* Row 2, Col 1 */
+#led-wall {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+/* Row 2, Col 2 */
+#calculator {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* Row 3, Col 1 */
+#pastel-puzzels {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+/* Row 3, Col 2 */
+#run-buddy {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
