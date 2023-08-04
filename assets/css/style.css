@@ -60,10 +60,16 @@ nav a:hover {
     color: var(--header-link-hover);
 }
 
+#nav-menu {
+    display: none;
+}
+
 /* ---------------Main--------------- */
 
+/* ---------About Me--------- */
 main > section {
     margin: 40px;
+    height: fit-content;
 }
 
 main > section > * {
@@ -80,7 +86,13 @@ main > section > h2 {
     margin-right: 20px;
 }
 
-main > section > section, .grid-container {
+.small-display {
+    text-align: left;
+    width: 100%;
+    display: none;
+}
+
+.content-section, .grid-container {
     width: 75%;
     border-left: solid var(--section-heading);
     padding-left: 40px;
@@ -91,6 +103,7 @@ main > section > section p {
     line-height: 1.5;
 }
 
+/* ---------Work--------- */
 .grid-container {
     display: inline-grid;
     grid-template-columns: 50% 50%;
@@ -101,6 +114,12 @@ main > section > section p {
 .grid-container figure {
     height: 100%;
     border: 5px solid var(--grid-color);
+    background-color: var(--section-heading);
+}
+
+.grid-container figure:hover img {
+    transition: 0.4s;
+    opacity: 0.5;
 }
 
 .grid-container img {
@@ -163,4 +182,77 @@ main > section > section p {
     grid-row-end: 4;
     grid-column-start: 2;
     grid-column-end: 3;
+}
+
+/* ---------Contact Me--------- */
+/* #contact section {
+    width: 75%;
+    border-left: solid var(--section-heading);
+    height: 100%;
+} */
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#contact a {
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: solid;
+    padding: 6px;
+    margin: 20px;
+    font-size: 150%;
+}
+
+#contact a:visited {
+    color: var(--section-heading);
+}
+
+#contact a:hover {
+    color: var(--grid-color);
+}
+
+/* ---------Contact Me--------- */
+#resume section > * {
+    font-size: 130%;
+}
+
+@media screen and (max-width: 980px) {
+    #nav-menu {
+        display: block;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    nav:hover a {
+        display: block;
+    }
+
+    nav:hover #nav-menu {
+        display: none;
+    }
+
+    .big-display {
+        display: none;
+    }
+
+    .small-display {
+        display: block;
+    }
+
+    .content-section {
+        border: none;
+        border-top: solid;
+        padding-top: 15px;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    main > section > * {
+        display: block;
+    }
 }
