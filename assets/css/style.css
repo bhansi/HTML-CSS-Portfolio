@@ -47,6 +47,7 @@ nav {
 
 nav a {
     text-decoration: none;
+    color: var(--header-text);
     border-bottom: solid;
     padding: 6px;
     margin-right: 4px;
