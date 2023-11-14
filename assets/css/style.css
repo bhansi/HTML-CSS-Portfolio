@@ -111,6 +111,14 @@ main > section > section p {
     gap: 15px;
 }
 
+.grid-container a {
+    text-decoration: none;
+}
+
+.grid-container a:visited {
+    color: black;
+}
+
 .grid-container figure {
     height: 100%;
     border: 5px solid var(--grid-color);
