@@ -207,6 +207,7 @@ main > section > section p {
     display: inline-block;
     text-decoration: none;
     border-bottom: solid;
+    color: var(--section-heading);
     padding: 6px;
     margin: 20px;
     font-size: 150%;
