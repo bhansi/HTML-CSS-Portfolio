@@ -66,6 +66,10 @@ nav a:hover {
 
 /* ---------------Main--------------- */
 
+main {
+    padding: 15px 0;
+}
+
 /* ---------About Me--------- */
 main > section {
     margin: 40px;
