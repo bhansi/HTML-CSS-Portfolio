@@ -165,7 +165,7 @@ main > section > section p {
 }
 
 /* Row 2, Col 1 */
-#led-wall {
+#pawfect-match {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
@@ -173,7 +173,7 @@ main > section > section p {
 }
 
 /* Row 2, Col 2 */
-#calculator {
+#pwa-text-editor {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 2;
@@ -181,7 +181,7 @@ main > section > section p {
 }
 
 /* Row 3, Col 1 */
-#pastel-puzzels {
+#book-search-engine {
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 1;
@@ -189,7 +189,7 @@ main > section > section p {
 }
 
 /* Row 3, Col 2 */
-#run-buddy {
+#social-network-api {
     grid-row-start: 3;
     grid-row-end: 4;
     grid-column-start: 2;
